@@ -1,0 +1,47 @@
+#lbOverlay { position: fixed; top: 0; left: 0; z-index: 99998; width: 100%; height: 500px; }
+	#lbOverlay.red { background-color: #e2d7c1; }
+
+#lbMain { position: absolute; left: 0; width: 100%; z-index: 99999; text-align: center; line-height: 0; }
+#lbMain a img { border: none; }
+
+#lbOuterContainer { position: relative; background-color: #f8f4e9; width: 200px; height: 200px; margin: 0 auto;}
+	#lbOuterContainer.red { border: 2px solid #f8c250; }
+
+#lbDetailsContainer {	font: 10px Verdana, Helvetica, sans-serif; background: #f8f4e9; width: 100%; line-height: 1.4em;	overflow: auto; margin: 0 auto; }
+	#lbDetailsContainer.red { border: 2px solid #f8c250; border-top: none; }
+
+#lbImageContainer, #lbIframeContainer { padding: 10px; }
+#lbLoading {
+	position: absolute; top: 45%; left: 0%; height: 32px; width: 100%; text-align: center; line-height: 0; background: url(../img2/loading.gif) center no-repeat;
+}
+
+#lbHoverNav { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#lbImageContainer>#lbHoverNav { left: 0; }
+#lbHoverNav a { outline: none; }
+
+#lbPrev { width: 49%; height: 100%; background: transparent url(../img2/blank.gif) no-repeat; display: block; left: 0; float: left; }
+	#lbPrev.red:hover, #lbPrev.red:visited:hover { background: url(../img2/prev_red.gif) left 15% no-repeat; }
+	
+#lbNext { width: 49%; height: 100%; background: transparent url(../img2/blank.gif) no-repeat; display: block; right: 0; float: right; }
+	#lbNext.red:hover, #lbNext.red:visited:hover { background: url(../img2/next_red.gif) right 15% no-repeat; }
+
+#lbPrev2, #lbNext2 { text-decoration: none; font-weight: bold; }
+	#lbPrev2.red, #lbNext2.red, #lbSpacer.red { color: #3d0f02; }
+	
+#lbPrev2_Off, #lbNext2_Off { font-weight: bold; }
+	#lbPrev2_Off.red, #lbNext2_Off.red { color: #FFCCCC; }
+	
+#lbDetailsData { padding: 0 10px; }
+	#lbDetailsData.red { color: #3d0f02; }
+
+#lbDetails { width: 60%; float: left; text-align: left; }
+#lbCaption { display: block; font-weight: bold; }
+#lbNumberDisplay { float: left; display: block; padding-bottom: 1.0em; }
+#lbNavDisplay { float: left; display: block; padding-bottom: 1.0em; }
+
+#lbClose { width: 84px; height: 28px; float: right; margin-bottom: 1px; }
+	#lbClose.red { background: url(../img2/close_red.png) no-repeat; }
+#lbPlay { width: 84px; height: 28px; float: right; margin-bottom: 1px; }
+	#lbPlay.red { background: url(../img2/play_red.png) no-repeat; }
+#lbPause { width: 84px; height: 28px; float: right; margin-bottom: 1px; }
+	#lbPause.red { background: url(../img2/pause_red.png) no-repeat; }	
